@@ -1,0 +1,15 @@
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import Navbar from "./Navbar";
+
+// test("renders learn react link", () => {
+//   render(<App />);
+//   const linkElement = screen.getByText(/learn react/i);
+//   expect(linkElement).toBeInTheDocument();
+// });
+
+test("renders a Navbar", () => {
+  render(<Navbar />, { wrapper: MemoryRouter });
+  const navbar = screen.getByTestId("navbar");
+  expect(navbar).toBeInTheDocument();
+});

@@ -1,0 +1,15 @@
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import App from "./App";
+
+test("renders learn react link", () => {
+  render(<App />, { wrapper: MemoryRouter });
+  const linkElement = screen.getByText(/products/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+// test("has spinning react logo", () => {
+//   render(<App />);
+//   const spinningLogo = screen.getByTestId("spinning-logo");
+//   expect(spinningLogo).toBeInTheDocument();
+// });

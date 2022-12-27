@@ -1,0 +1,13 @@
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import Cart from "./Cart";
+
+test("renders learn react link", () => {
+  render(<Cart />, { wrapper: MemoryRouter });
+});
+
+// test("has spinning react logo", () => {
+//   render(<App />);
+//   const spinningLogo = screen.getByTestId("spinning-logo");
+//   expect(spinningLogo).toBeInTheDocument();
+// });

@@ -1,0 +1,51 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+    url("./../../../public/hero-bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.hero-cta-block {
+  margin-left: 10%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.hero-cta-block > * {
+  margin: 0;
+  padding: 0;
+}
+.hero-cta-block h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.hero-cta-block h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-cta-block a.primary {
+  font-size: 1.2rem;
+  font-weight: 400;
+  background-color: #24867c;
+  text-decoration: none;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all linear 0.2s;
+}
+
+.hero-cta-block a.primary:hover {
+  background-color: #44b5a9;
+}

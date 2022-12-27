@@ -1,8 +1,9 @@
 import "./App.css";
 import { Link } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
-import Hero from "./components/hero/Hero";
-import Products from "./components/products/Products";
+import Navbar from "./navbar/Navbar";
+import Hero from "./hero/Hero";
+import Products from "./products/Products";
+import Cart from "./cart/Cart";
 
 function App() {
   return (
