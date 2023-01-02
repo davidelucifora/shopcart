@@ -35,7 +35,7 @@
 .hero-cta-block a.primary {
   font-size: 1.2rem;
   font-weight: 400;
-  background-color: #24867c;
+  background-color: var(--blue-primary);
   text-decoration: none;
   border: none;
   padding: 0.8rem 1.8rem;
