@@ -10,7 +10,14 @@ import "./style.css";
 export default function Navbar() {
   return (
     <nav data-testid="navbar">
-      <h2 className="logo">DaShop</h2>
+      <img
+        className="logo"
+        src="/logo.svg"
+        alt="The Surf Shop"
+        width=" 60px"
+        height="60px"
+      />
+
       <ul>
         <li>
           <NavLink data-testid="nav-link" to="/">
