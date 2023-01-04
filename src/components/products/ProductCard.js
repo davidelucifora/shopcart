@@ -2,11 +2,19 @@ import React from "react";
 import { useState } from "react";
 import "./style.css";
 export default function ProductCard({ product }) {
+  //Sets quantity selected for an item in a card
   const [qty, setQty] = useState(1);
 
   // When Clicking Add To Cart
-  function handleAddToCart() {
-    console.log("the total is " + qty * product.price);
+  function handleAddToCart(productId) {
+    console.log(productId);
+    /** This function should:
+     * 1. get qty
+     * 2. get product (or just product id, maybe)
+     * 3. pass the qty and the product(id?) to the cart so the cart state can be updated
+     * now for the cart state.
+     *
+     */
   }
 
   function handleQtyChange(e) {
@@ -30,7 +38,7 @@ export default function ProductCard({ product }) {
         />
         <h3 className="product-card-price">{product.price} $</h3>
       </div>
-      <button className="primary" onClick={handleAddToCart}>
+      <button className="primary" onClick={() => handleAddToCart(product.id)}>
         Add to Cart
       </button>
     </div>

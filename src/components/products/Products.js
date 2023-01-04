@@ -6,22 +6,8 @@ export default function Products() {
   // Get products in stock (separate file).
   const productsArray = stock;
   // Loop through them and render product cards.
-
-  const calcTotalForCart = (qty, price) => qty * price;
-
   const renderProductCards = productsArray.map((product) => {
-    return (
-      <ProductCard
-        key={product.id}
-        product={product}
-        // id={product.id}
-        // img={product.img}
-        // name={product.name}
-        // price={product.price}
-        // size={product.size}
-        // desc={product.desc}
-      />
-    );
+    return <ProductCard key={product.id} product={product} />;
   });
   return (
     <>
