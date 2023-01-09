@@ -1,7 +1,12 @@
 import React from "react";
 
-export default function Cart() {
-  return <></>;
+export default function Cart(props) {
+  const cart = props.cart;
+  return (
+    <div className="cart">
+      <p>{cart.map((item) => item.name)}</p>
+    </div>
+  );
 }
 
 /**Ok let's pseudcocode babyeyyyyyyy

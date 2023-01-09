@@ -1,13 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import cartIcon from "./cart.svg";
+
 import "./style.css";
 
-/** Using NavLink instead of Link for routing as it
- * comes with built in functionality that adds a .active class
- * to an active route link.
- */
-
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <nav data-testid="navbar">
       <img
@@ -20,18 +17,17 @@ export default function Navbar() {
 
       <ul>
         <li>
-          <NavLink data-testid="nav-link" to="/">
-            Home
-          </NavLink>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink data-testid="nav-link" to="/products">
-            Products
-          </NavLink>
+          <NavLink to="/products">Products</NavLink>
         </li>
         <li>
-          <NavLink data-testid="nav-link" to="/cart" className="shopping-cart">
-            Cart
+          <NavLink to="/cart" className="shopping-cart">
+            <img className="cart-icon" src={cartIcon} alt="cart" />
+            <span className={`cart-qty ${props.cartItems > 0 && "opacity-1"}`}>
+              {props.cartItems > 0 ? props.cartItems : ""}
+            </span>
           </NavLink>
         </li>
       </ul>

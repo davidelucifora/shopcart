@@ -2,12 +2,14 @@ import React from "react";
 import ProductCard from "./ProductCard";
 import stock from "./stock";
 
-export default function Products() {
+export default function Products(props) {
   // Get products in stock (separate file).
   const productsArray = stock;
   // Loop through them and render product cards.
   const renderProductCards = productsArray.map((product) => {
-    return <ProductCard key={product.id} product={product} />;
+    return (
+      <ProductCard key={product.id} product={product} setCart={props.setCart} />
+    );
   });
   return (
     <>

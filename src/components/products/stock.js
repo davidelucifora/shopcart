@@ -6,6 +6,7 @@ export default [
     price: 249,
     size: "8.2 ft",
     desc: "The best surfboard to start your journey.",
+    qty: 0,
   },
   {
     id: "mid-surf-1",
@@ -14,6 +15,7 @@ export default [
     price: 359,
     size: "6.7 ft",
     desc: "Smaller and more agile, great to start working on your turns. ",
+    qty: 0,
   },
   {
     id: "adv-surf-1",
@@ -22,5 +24,6 @@ export default [
     price: 649,
     size: "6 ft",
     desc: "For the pros ready to attack each wave like a boss.",
+    qty: 0,
   },
 ];
