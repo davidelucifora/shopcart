@@ -1,0 +1,93 @@
+@import url("https://css.gg/math-minus.css");
+@import url("https://css.gg/math-plus.css");
+:root {
+  --ggs: 0.6;
+}
+
+.cart {
+  display: flex;
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: center;
+  max-width: 40%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 15px;
+  box-shadow: var(--default-shadow);
+  gap: 1rem;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cart-item-thumbnail {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.cart-item-thumbnail img {
+  object-fit: cover;
+  border-radius: 5%;
+  padding: 0.2rem;
+  box-shadow: var(--default-shadow);
+}
+
+.cart-item-qty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%/50%;
+  box-shadow: var(--default-shadow);
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.cart-item-qty button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: var(--blue-primary);
+  width: 100%;
+}
+
+.cart-item-qty input {
+  max-width: 1rem;
+  border: none;
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+  padding: 0 0.5rem;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.cart-item-qty input:focus {
+  outline: 1px solid var(--blue-primary);
+}
+
+button.increment {
+  font-size: 1rem;
+}
+
+.cart-item-name {
+  font-size: 1.5rem;
+}
+
+.cart-item-price {
+  color: var(--blue-primary);
+  font-size: 1.2rem;
+}

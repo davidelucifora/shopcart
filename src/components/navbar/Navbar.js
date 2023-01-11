@@ -7,13 +7,15 @@ import "./style.css";
 export default function Navbar(props) {
   return (
     <nav data-testid="navbar">
-      <img
-        className="logo"
-        src="/logo.svg"
-        alt="The Surf Shop"
-        width=" 60px"
-        height="60px"
-      />
+      <NavLink to="/">
+        <img
+          className="logo"
+          src="/logo.svg"
+          alt="The Surf Shop"
+          width=" 60px"
+          height="60px"
+        />
+      </NavLink>
 
       <ul>
         <li>
