@@ -4,19 +4,16 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Products from "./components/products/Products";
 import Cart from "./components/cart/Cart";
-import stock from "./components/products/stock";
 import "./App.css";
 
 export default function App() {
-  const [cart, setCart] = useState(stock);
-  const [cartQty, setCartQty] = useState([]);
+  const [cart, setCart] = useState([]);
 
   const totalCartQty = () => {
     let count = 0;
     cart.forEach((item) => {
       count += parseInt(item.qty);
     });
-    console.log(count);
     return count;
   };
 
@@ -34,7 +31,10 @@ export default function App() {
             />
           }
         />
-        <Route path="/products" element={<Products setCart={setCart} />} />
+        <Route
+          path="/products"
+          element={<Products setCart={setCart} heading="Discover our Range" />}
+        />
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
       </Routes>
       <p>{console.log(cart)}</p>

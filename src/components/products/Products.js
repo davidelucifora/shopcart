@@ -14,7 +14,7 @@ export default function Products(props) {
   return (
     <>
       <div className="products">
-        <h1>Discover our Range</h1>
+        <h1>{props.heading}</h1>
         <p>
           3 Boards to take you from beginner to pro. All you'll need for your
           surfing journey.

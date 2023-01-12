@@ -19,6 +19,7 @@ div.products {
 }
 .product-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /*Product Cards*/

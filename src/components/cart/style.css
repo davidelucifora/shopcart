@@ -1,7 +1,13 @@
 @import url("https://css.gg/math-minus.css");
 @import url("https://css.gg/math-plus.css");
+@import url("https://css.gg/trash.css");
 :root {
   --ggs: 0.6;
+}
+
+.gg-trash {
+  color: red;
+  margin-left: 0.8rem;
 }
 
 .cart {
@@ -9,12 +15,20 @@
   padding: 2rem;
   flex-flow: column;
   justify-content: center;
-  max-width: 40%;
+
   margin: 0 auto;
   margin-top: 4rem;
   border-radius: 15px;
   box-shadow: var(--default-shadow);
   gap: 1rem;
+}
+
+.empty-cart-message {
+  display: flex;
+  flex-flow: column;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart-item:last-child {
@@ -90,4 +104,25 @@ button.increment {
 .cart-item-price {
   color: var(--blue-primary);
   font-size: 1.2rem;
+}
+
+.cart-item-del {
+  color: red;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  text-decoration: none;
+}
+
+.cart button.primary {
+  border-radius: 10px;
+}
+
+.cart button.primary:hover {
+  background-color: #44b5a9;
+}
+
+.total-price {
+  font-weight: 400;
+  color: var(--blue-primary);
 }

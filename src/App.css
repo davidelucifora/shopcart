@@ -11,6 +11,16 @@ button {
   cursor: pointer;
 }
 
+button.primary {
+  background-color: var(--blue-primary);
+  border: none;
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all linear 0.2s;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
