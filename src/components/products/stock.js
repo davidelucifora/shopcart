@@ -10,7 +10,7 @@ export default [
   },
   {
     id: "mid-surf-1",
-    img: "intermediate-board.jpg",
+    img: "/intermediate-board.jpg",
     name: "Turtle Board 300",
     price: 359,
     size: "6.7 ft",
