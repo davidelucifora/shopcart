@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import cartIcon from "./cart.svg";
-import logo from "/logo.svg";
 
 import "./style.css";
 
@@ -11,7 +10,7 @@ export default function Navbar(props) {
       <NavLink to="/">
         <img
           className="logo"
-          src={logo}
+          src="/logo.svg"
           alt="The Surf Shop"
           width=" 60px"
           height="60px"
