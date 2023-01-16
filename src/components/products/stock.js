@@ -1,7 +1,7 @@
 export default [
   {
     id: "beg-surf-1",
-    img: "/beginner-board.jpg",
+    img: "beginner-board.jpg",
     name: "Novice Board 100",
     price: 249,
     size: "8.2 ft",
@@ -10,7 +10,7 @@ export default [
   },
   {
     id: "mid-surf-1",
-    img: "/intermediate-board.jpg",
+    img: "intermediate-board.jpg",
     name: "Turtle Board 300",
     price: 359,
     size: "6.7 ft",
@@ -19,7 +19,7 @@ export default [
   },
   {
     id: "adv-surf-1",
-    img: "/advanced-board.jpg",
+    img: "advanced-board.jpg",
     name: "Shark Board 500",
     price: 649,
     size: "6 ft",

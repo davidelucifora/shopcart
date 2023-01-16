@@ -22,7 +22,7 @@ export default function App() {
       <Navbar cartItems={totalCartQty()} />
       <Routes>
         <Route
-          path="/"
+          path=""
           element={
             <Hero
               mainHeading="Surf like a Pro."
@@ -32,10 +32,10 @@ export default function App() {
           }
         />
         <Route
-          path="/products"
+          path="products"
           element={<Products setCart={setCart} heading="Discover our Range" />}
         />
-        <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
+        <Route path="cart" element={<Cart cart={cart} setCart={setCart} />} />
       </Routes>
       <p>{console.log(cart)}</p>
     </div>

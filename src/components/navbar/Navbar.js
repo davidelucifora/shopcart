@@ -7,10 +7,10 @@ import "./style.css";
 export default function Navbar(props) {
   return (
     <nav data-testid="navbar">
-      <NavLink to="/">
+      <NavLink to="">
         <img
           className="logo"
-          src="/logo.svg"
+          src="logo.svg"
           alt="The Surf Shop"
           width=" 60px"
           height="60px"
@@ -22,10 +22,10 @@ export default function Navbar(props) {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/products">Products</NavLink>
+          <NavLink to="products">Products</NavLink>
         </li>
         <li>
-          <NavLink to="/cart" className="shopping-cart">
+          <NavLink to="cart" className="shopping-cart">
             <img className="cart-icon" src={cartIcon} alt="cart" />
             <span className={`cart-qty ${props.cartItems > 0 && "opacity-1"}`}>
               {props.cartItems > 0 ? props.cartItems : ""}

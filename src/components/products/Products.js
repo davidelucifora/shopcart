@@ -3,10 +3,8 @@ import ProductCard from "./ProductCard";
 import stock from "./stock";
 
 export default function Products(props) {
-  // Get products in stock (separate file).
-  const productsArray = stock;
-  // Loop through them and render product cards.
-  const renderProductCards = productsArray.map((product) => {
+  // Loop through producfts in stock (separate file) and render product cards.
+  const renderProductCards = stock.map((product) => {
     return (
       <ProductCard key={product.id} product={product} setCart={props.setCart} />
     );
